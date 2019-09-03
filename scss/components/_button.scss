@@ -1,0 +1,21 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+.button,
+.button-outline {
+  width: 96px;
+  text-align: center;
+  padding: 7px 0;
+  border-radius: 5%;
+  border: 1px solid #eb2121;
+}
+
+.button-outline {
+  color: #eb2121 !important;
+}
+
+.button {
+  color: white !important;
+  background-color: #eb2121;
+}
