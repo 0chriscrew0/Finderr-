@@ -4,9 +4,9 @@
 
 .button,
 .button-outline {
-  width: 96px;
+  width: 84px;
   text-align: center;
-  padding: 7px 0;
+  padding: 5px 0;
   border-radius: 5%;
   border: 1px solid #eb2121;
 }
@@ -18,4 +18,12 @@
 .button {
   color: white !important;
   background-color: #eb2121;
+}
+
+@include media-breakpoint-up(md) {
+  .button,
+  .button-outline {
+    padding: 7px 0;
+    width: 96px;
+  }
 }

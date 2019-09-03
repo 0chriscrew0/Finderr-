@@ -7,6 +7,13 @@ body {
   font-family: "Quando", serif;
 }
 
-.header-links a {
-  font-size: 18px;
+.header-links {
+  a {
+    font-size: 18px;
+  }
+
+  .button,
+  .button-outline {
+    margin-top: 0.6rem;
+  }
 }
