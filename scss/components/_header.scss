@@ -5,6 +5,8 @@ body {
 .header-logo {
   font-size: 24px;
   font-family: "Quando", serif;
+  padding: 8px;
+  padding-left: 0;
 }
 
 .header-links {
@@ -15,5 +17,34 @@ body {
   .button,
   .button-outline {
     margin-top: 0.6rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .my-navbar {
+    padding: 1.6rem 3rem 0;
+  }
+
+  .header-links {
+    align-items: center;
+    justify-content: space-between;
+
+    div {
+      display: flex;
+      align-items: flex-end;
+      margin-right: 1.4rem;
+      a {
+        margin-right: 1.4rem;
+      }
+    }
+
+    .button,
+    .button-outline {
+      margin-top: 0;
+    }
+
+    .button {
+      margin-right: 1rem;
+    }
   }
 }

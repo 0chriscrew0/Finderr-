@@ -4,8 +4,10 @@
 
 .button,
 .button-outline {
-  width: 84px;
+  width: 86px;
   text-align: center;
+  font-family: "Roboto", serif;
+  font-size: 12px;
   padding: 5px 0;
   border-radius: 5%;
   border: 1px solid #eb2121;
@@ -23,7 +25,8 @@
 @include media-breakpoint-up(md) {
   .button,
   .button-outline {
-    padding: 7px 0;
+    font-size: 18px;
+    padding: 4px 0;
     width: 96px;
   }
 }
