@@ -2,6 +2,51 @@ body {
   font-family: "Rokkitt", serif;
 }
 
+.icon-bar {
+  width: 22px;
+  height: 2px;
+  background-color: $black;
+  display: block;
+  transition: all 0.2s;
+  margin-top: 4px;
+}
+
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+  &:focus,
+  &:active {
+    outline: none !important;
+    box-shadow: none;
+  }
+}
+
+.navbar-toggler .top-bar {
+  transform: translate(3px) rotate(45deg);
+  transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+}
+
+.navbar-toggler .bottom-bar {
+  transform: translate(3px) rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
 .header-logo {
   font-size: 24px;
   font-family: "Quando", serif;
