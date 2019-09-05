@@ -1,5 +1,6 @@
 .intro {
   .intro-left {
+    padding: 0;
     .intro-header {
       padding: 3.4rem 0 2rem;
       h1,
@@ -43,5 +44,43 @@
 
   .intro-right {
     display: none;
+  }
+
+  @include media-breakpoint-up(md) {
+    .row {
+      padding: 6rem 2rem;
+    }
+    .intro-left {
+      .intro-header {
+        padding-top: 0;
+      }
+
+      .dalmation-image-mobile {
+        display: none;
+      }
+
+      p {
+        margin: 0;
+        margin-bottom: 3.2rem;
+      }
+    }
+
+    .intro-right {
+      display: block;
+      padding: 0 2rem;
+
+      .dalmation-image-desktop {
+        width: 85%;
+        z-index: 0;
+      }
+
+      .intro-image-desktop {
+        float: right;
+        width: 77%;
+        margin-top: -2rem;
+        position: relative;
+        z-index: 1;
+      }
+    }
   }
 }
