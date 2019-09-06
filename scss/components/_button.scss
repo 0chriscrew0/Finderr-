@@ -9,18 +9,26 @@
   font-family: "Roboto", serif;
   font-size: 12px !important;
   padding: 5px 0;
-  border-radius: 5%;
   border: 1px solid #eb2121;
+  cursor: pointer;
 }
 
 .button-outline {
   color: #eb2121 !important;
   background-color: $white;
+  &:hover {
+    color: $white !important;
+    background-color: #eb2121;
+  }
 }
 
 .button {
   color: white !important;
   background-color: #eb2121;
+  &:hover {
+    background-color: darken(#eb2121, 10);
+    border-color: darken(#eb2121, 10);
+  }
 }
 
 @include media-breakpoint-up(md) {
