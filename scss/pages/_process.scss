@@ -1,0 +1,57 @@
+.process {
+  .process-left {
+    display: none;
+  }
+
+  .process-right {
+    margin-top: 8rem;
+    padding: 0;
+    .process-header {
+      text-align: center;
+
+      h1 {
+        font-size: 24px;
+        font-family: "Quando", serif;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 14px;
+        font-weight: 300;
+      }
+    }
+
+    .process-steps-mobile {
+      width: 100vw;
+      .process-carousel-item {
+        width: 100%;
+        height: 163px;
+        background-color: #f4f1f1;
+      }
+    }
+
+    .process-steps-desktop {
+      display: none;
+    }
+
+    button {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    padding: 0 48px;
+    .process-left {
+      display: block;
+    }
+    .process-right {
+      .process-steps-mobile {
+        display: none;
+      }
+      .process-steps-desktop {
+        display: block;
+      }
+    }
+  }
+}
