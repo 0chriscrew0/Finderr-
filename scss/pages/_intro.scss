@@ -50,7 +50,7 @@
     .row {
       max-width: 1400px;
       margin: 0 auto;
-      padding: 6rem 2rem;
+      padding: 6rem 2rem 4rem;
     }
     .intro-left {
       .intro-header {
@@ -79,7 +79,7 @@
 
   @include media-breakpoint-up(lg) {
     .row {
-      padding: 6rem 8rem;
+      padding: 6rem 8rem 4rem;
     }
 
     .intro-right {
