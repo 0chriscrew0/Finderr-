@@ -1,0 +1,49 @@
+.action {
+  .action-image {
+    display: none;
+  }
+
+  .lost-pet,
+  .found-pet {
+    height: 358px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-family: "Quando", serif;
+      font-size: 24px;
+      margin-bottom: 2rem;
+    }
+    button {
+      width: 176px;
+    }
+  }
+
+  .lost-pet {
+    background-image: url("../../img/lost-cat-mobile.png");
+  }
+
+  .found-pet {
+    background-image: url("../../img/found-cat-mobile.png");
+  }
+
+  @include media-breakpoint-up(md) {
+    .action-image {
+      display: block;
+      img {
+        width: 100%;
+      }
+    }
+
+    .lost-pet,
+    .found-pet {
+      background-image: none;
+      height: auto;
+    }
+
+    .found-pet {
+      background-image: none;
+    }
+  }
+}

@@ -16,7 +16,8 @@
 @import "components/button", "components/header";
 
 // 6. Page-specific styles
-@import "pages/home", "pages/intro", "pages/process", "pages/reunited";
+@import "pages/home", "pages/intro", "pages/process", "pages/reunited",
+  "pages/action";
 
 // 7. Themes
 @import "themes/default";
