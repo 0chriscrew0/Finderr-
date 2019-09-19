@@ -29,6 +29,7 @@
   }
 
   @include media-breakpoint-up(md) {
+    padding: 0 48px;
     .action-image {
       display: block;
       img {
@@ -40,10 +41,52 @@
     .found-pet {
       background-image: none;
       height: auto;
+      h1 {
+        font-size: 18px;
+        margin-bottom: 1rem;
+      }
+      button {
+        width: 100px;
+      }
     }
 
+    .spacer {
+      width: 100%;
+      height: 3rem;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    .lost-pet,
     .found-pet {
-      background-image: none;
+      h1 {
+        font-size: 24px;
+        margin-bottom: 2rem;
+      }
+      button {
+        width: 176px;
+      }
+    }
+
+    .spacer {
+      width: 100%;
+      height: 4rem;
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    .lost-pet,
+    .found-pet {
+      h1 {
+        font-size: 36px;
+        margin-bottom: 3rem;
+      }
+      button {
+        width: 240px;
+      }
+    }
+
+    .spacer {
+      width: 100%;
+      height: 6rem;
     }
   }
 }
