@@ -1,3 +1,48 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+
+footer {
+  padding: 2rem 1rem 3rem;
+  h1 {
+    font-family: "Quando", serif;
+    font-size: 24px;
+    margin-bottom: 1rem;
+  }
+  a {
+    font-family: "Rokkitt", serif;
+    font-size: 24px;
+    font-weight: 300;
+    color: $black;
+    margin-bottom: 1rem;
+  }
+
+  .footer-links {
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+    margin-bottom: 1.6rem;
+  }
+
+  .footer-main {
+    margin-top: 3.4rem;
+
+    h1 {
+      margin-bottom: 2.4rem;
+    }
+
+    .footer-icons {
+      margin-bottom: 2rem;
+      img {
+        margin-right: 2.4rem;
+      }
+    }
+
+    p {
+      font-family: "Rokkitt", serif;
+      font-size: 18px;
+      font-weight: 300;
+    }
+  }
+}
