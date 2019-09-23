@@ -45,4 +45,48 @@ footer {
       font-weight: 300;
     }
   }
+
+  @include media-breakpoint-up(md) {
+    padding: 4rem 48px 3rem;
+
+    h1 {
+      font-family: "Quando", serif;
+      font-size: 12px;
+      margin-bottom: 0.4rem;
+    }
+    a {
+      font-family: "Rokkitt", serif;
+      font-size: 12px;
+      font-weight: 300;
+      color: $black;
+      margin-bottom: 0.4rem;
+    }
+    .footer-main {
+      margin-top: 0;
+      align-self: flex-end;
+      h1 {
+        margin-bottom: 1.4rem;
+      }
+      .footer-icons {
+        margin-bottom: 1rem;
+        img {
+          width: 16px;
+          margin-right: 0.4rem;
+        }
+      }
+
+      p {
+        font-size: 12px;
+        margin-bottom: 0.4rem;
+      }
+    }
+
+    .footer-links-wrapper {
+      width: 66.66%;
+      align-items: flex-end;
+      .footer-links {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
