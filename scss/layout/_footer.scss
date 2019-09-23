@@ -89,4 +89,45 @@ footer {
       }
     }
   }
+  @include media-breakpoint-up(lg) {
+    padding: 8rem 48px 3rem;
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 1rem;
+    }
+    a {
+      font-size: 18px;
+      margin-bottom: 1rem;
+    }
+    .footer-main {
+      align-self: flex-end;
+      h1 {
+        margin-bottom: 2.4rem;
+      }
+      .footer-icons {
+        margin-bottom: 2rem;
+        img {
+          width: 32px;
+          margin-right: 2.4rem;
+        }
+      }
+
+      p {
+        font-size: 18px;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .footer-links-wrapper {
+      .footer-links {
+        margin-bottom: 0;
+      }
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    a {
+      font-size: 24px;
+    }
+  }
 }
