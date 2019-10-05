@@ -75,6 +75,10 @@ body {
     align-items: center;
     justify-content: space-between;
 
+    a {
+      font-size: 12px;
+    }
+
     div {
       display: flex;
       align-items: flex-end;
@@ -91,6 +95,14 @@ body {
 
     .button {
       margin-right: 1rem;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .header-links {
+    a {
+      font-size: 18px;
     }
   }
 }
